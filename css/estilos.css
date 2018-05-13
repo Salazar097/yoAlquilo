@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+header {
+	margin-top:10px;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+}
+
+nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+	margin:20px auto;
+	max-width:1200px;
+	width:90%;
+}
+
+nav > ul{
+	display: table;
+	width: 100%;
+	background: #000;
+	position: relative;
+}
+
+nav > ul li {
+	display: table-cell;
+}
+
+nav > ul li a{
+	color:#fff;
+	display:block;
+
+	line-height:20px;
+	padding:20px;
+	position: relative;
+	text-align: center;
+	text-decoration:none;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover {
+	background:#5da5a2;
+}
+
+nav > ul > li > a span {
+	background: #174459;
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	top: -55px;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > a span .icon{
+	display: block;
+	line-height: 60px;
+}
+
+nav > ul >li > a:hover > span {
+	top: 0;
+}
+
+/*Colores*/
+nav > ul > li a .pr {
+	background:#0e5061;
+}
+ 
+nav > ul > li a .se {
+	background:#17E8E5;	
+}
+nav ul li a .us {
+	background:#6CF333;
+}
+ 
+nav ul li a .te {
+	background:#f25724;
+}
+ 
+nav ul li a .cu {
+	background:#B475F8;
+}
+
+/*secciones*/
+h3 {	/*estilo de los titulos de la seccion*/
+	margin: auto 50px;
+ 	font-size: 40px;
+ 	color: #F2B825;
+
+
+}
+
+ hr { 
+   border: 3px solid #FFFFFF; 
+   border-radius: 200px /8px; 
+   height: 0px; 
+   text-align: center;
+ }
+
+ /* formularios*/
+ div form.forinf {
+ 	background: #FFFFFF;
+ 	margin: auto;
+ 	width: 450px;
+ 	max-width: 450px;
+ 	padding: 15px;
+ 	border: 1px solid rgba(0,0,0,0.2);
+ }
+
+ div form {
+ 	background: #FAFAFA;
+ 	margin: auto;
+ 	width: 1000px;
+ 	max-width: 1000px;
+ 	padding: 15px;
+ 	border: 1px solid rgba(0,0,0,0.2);
+ }
+
+ input {	/*estilo para los inputs de los formularios*/
+ 	display: block;
+ 	padding: 1px;
+ 	width: 300px;
+ 	margin: auto;
+ 	font-size: 20px;
+ }
+
+ textarea {	/*estilos del recuadro para la descripcion del lugar*/
+ 	display: block;
+ 	padding: 1px;
+ 	width: 300px;
+ 	margin: auto;
+ 	font-size: 20px;
+ }
+
+ button{
+ 	display: block;	/*estilo de un boton */
+ 	padding: 1px;	/*no recuerdo cual xd*/
+ 	width: 250px;
+ 	margin: auto;
+ 	font-size: 20px;
+ }
+
+form table button{	/*estilo de los botones de las tablas*/
+ 	display: block;
+ 	padding: 1px;
+ 	width: 200px;
+ 	margin: auto;
+ 	font-size: 20px;
+ }
+
+ /*tablas*/
+  table.finf{
+ 	background: #FFFFFF;
+ 	margin: auto;
+ }
+
+ tr, td{
+ 	padding: 20px;
+ }
+
+
+
+

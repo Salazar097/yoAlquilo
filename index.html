@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widt=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Mi cuenta 3</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!--scrip para la animacion de informacion-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+	<!--scrip para la animacion de informacion-->
+	
+	<script>
+			$(document).ready(function(){ // mantener oculto el formulario de actualizacion
+				$("#editmiinf").hide();
+
+			    $("#anim").click(function(){ // desaparecer la tabla de informacion y mostrar el formulario
+			        $("#miinformacion").slideToggle();
+			        $("#editmiinf").slideToggle();
+			    });
+
+			    $("#editinf").click(function(){// desaparecer el formulario y mostrar la tabla de inf
+			        $("#editmiinf").slideToggle();
+			        $("#miinformacion").slideToggle();
+			    });
+
+			});
+	</script>
+
+<title>perfil3.0</title>
+</head>
+
+<body>
+
+	<header>
+		<nav>	<!--menu para navegar en el sitio-->
+			<ul>
+				<li><a href="#"><span class="pr"><i class="icon icon-home"></i></span>Inicio</a></li>
+				<li><a href="#miinf"><span class="us"><i class="icon icon-user"></i></span>Mi información</a></li>
+				<li><a href="#verpub"><span class="se"><i class="icon icon-newspaper"></i></span>Ver publicaciones</a></li>
+				<li><a href="#newpub"><span class="te"><i class="icon icon-pencil2"></i></span>Nueva publicación</a></li>
+				<li><a href="#"><span class="cu"><i class="icon icon-cross"></i></span>Salir</a></li>
+			</ul>
+		</nav>
+	</header>
+<!--seccion para ver la informacion del usuario-->
+<div class="miinf" id="miinf">
+	<h3>Mi información</h3>
+	<!--tabla qu emuestra la informacion del usuario-->
+		<div id="miinformacion">	<!--tabla para la mostrar la informacion del usuario-->
+			<table>
+				<td>
+				<table class="fop" border="0">
+		    			<tr>
+		      				<td><img src="img/prro.jpg" width="250" height="270"></td>
+	        			</tr>
+		    			
+	      		</table>
+	      		</td>
+	      		<td>
+				<table class="finf" border="0"> 
+
+						<tr> 
+							<td>Nombre:</td>  
+							<td>juanito</td>
+						</tr> 
+						<tr> 
+							<td>Telefono:</td>  
+							<td>8101012</td>
+						</tr> 
+						<tr> 
+							<td>E-mail</td>
+							<td>email@gmail.com</td>  
+						</tr>  
+						<tr> 
+							<td><button type="anim" id="anim">Editar mi informacion</button></td>  
+						</tr> 
+		  		</table> 
+		  		</td>
+		  	</table>
+  		</div>
+				 
+		<!--eformulario para actualizar la informacion del usuario-->
+		<div id="editmiinf">
+			<table>
+				<td>
+					<table class="fop" border="0">
+		    		<tr>
+		     			<td><img src="img/prro.jpg" width="250" height="270"></td>
+	       			</tr>
+	       			<tr>
+		      			<td><button type="submit" id="btn">Cambiar foto de perfil</button></td>
+	        		</tr>
+	    			</table>
+				</td>
+				<td>
+			<form class="forinf">
+				<label>Nombre:</label>
+	  				<input type="text" id="name" name="name" maxlength="50">
+				<label>Telefono:</label>
+	  				<input type="text" id="tel" name="tel" maxlength="50">
+				<label>E-mail:</label>
+	  				<input type="text" id="mail" name="mail" maxlength="50">
+				<label>Contraseña:</label>
+	  				<input type="text" id="pass" name="password" maxlength="50"><br>
+  				<!--puto el que lo lea-->
+					<button type="editinf" id="editinf">Editar mi informacion</button>
+			</form>
+		</td>
+			</table>
+		</div>
+</div>
+
+<!--seccion para ver las publicaciones realizadas-->
+<div class="verpub" id="verpub">
+	
+	<h3>Publicaciones</h3>
+	<table class="pb" border="0" width="700" cellpadding="5" cellspacing="5"> <!--tabla principal-->
+		<tr> 
+			<td width="4" height="50"> 
+				<table border="0"> <!--tabla de la publicacion 1-->
+					<tr> 
+						<td><img src="img/casa.jpg" width="250" height="270"></td>  <!--direccion de la localizacion de la foto-->
+					</tr> 
+					<tr> <!--direccion del lugar-->
+						<td>Calle veracruz #18</td>  
+					</tr>
+					<tr> <!--precio del lugar-->
+						<td>$2,850</td>  
+					</tr>
+					<tr> <!--restricciones del lugar-->
+						<td>no niños y no mascotas</td>  
+					</tr>
+					<tr> <!--descripcion del lugar-->
+						<td>Departamento una recamara con closet, 1 baño completo, estancia con cocineta, área de  lavadero, tanque estacionario de gas, servicios incluidos: (agua, luz)  $2,350, amueblado $2,850</td>  
+					</tr> 
+					<tr> 
+						<td><button type="submit" id="btn">Editar publicación</button></td>  
+					</tr>
+				</table> 
+			</td> 
+			<td width="4" height="50"> 
+				<table border="0"> <!--tabla de la publicacion 2-->
+					<tr> 
+						<td><img src="img/casa1.jpg" width="250" height="270"></td>  <!--direccion de la localizacion de la foto-->
+					</tr> 
+					<tr> <!--direccion del lugar-->
+						<td>Calle veracruz #18</td>  
+					</tr>
+					<tr> <!--precio del lugar-->
+						<td>$2,850</td>  
+					</tr>
+					<tr> <!--restricciones del lugar-->
+						<td>no niños y no mascotas</td>  
+					</tr>
+					<tr> <!--descripcion del lugar-->
+						<td>Departamento una recamara con closet, 1 baño completo, estancia con cocineta, área de  lavadero, tanque estacionario de gas, servicios incluidos: (agua, luz)  $2,350, amueblado $2,850l</td>  
+					</tr> 
+					<tr> 
+						<td><button type="submit" id="btn">Editar publicación</button></td>  
+					</tr> 
+				</table> 
+			</td> 
+			<td width="4" height="50"> 
+				<table border="0"> <!--tabla de la publicacion 3-->
+					<tr> 
+						<td><img src="img/casa2.jpg" width="250" height="270"></td> <!--direccion de la localizacion de la foto--> 
+					</tr>
+					<tr> <!--direccion del lugar-->
+						<td>Calle veracruz #18</td>  
+					</tr>
+					<tr> <!--precio del lugar-->
+						<td>$2,850</td>  
+					</tr>
+					<tr> <!--restricciones del lugar-->
+						<td>no niños y no mascotas</td>  
+					</tr> 
+					<tr> <!--descripcion del lugar-->
+						<td>Departamento una recamara con closet, 1 baño completo, estancia con cocineta, área de  lavadero, tanque estacionario de gas, servicios incluidos: (agua, luz)  $2,350, amueblado $2,850</td>  
+					</tr> 
+					<tr> 
+						<td><button type="submit" id="btn">Editar publicación</button></td>  
+					</tr> 
+				</table> 
+			</td>
+			<td width="4" height="50"> 
+				<table border="0"> <!--tabla de la publicacion 4-->
+					<tr> 
+						<td><img src="img/casa3.jpg" width="250" height="270"></td>  <!--direccion de la localizacion de la foto-->
+					</tr>
+					<tr> <!--direccion del lugar-->
+						<td>Calle veracruz #18</td>  
+					</tr>
+					<tr> <!--precio del lugar-->
+						<td>$2,850</td>  
+					</tr>
+					<tr> <!--restricciones del lugar-->
+						<td>no niños y no mascotas</td>  
+					</tr> 
+					<tr> <!--descripcion del lugar-->
+						<td>Departamento una recamara con closet, 1 baño completo, estancia con cocineta, área de  lavadero, tanque estacionario de gas, servicios incluidos: (agua, luz)  $2,350, amueblado $2,850</td>  
+					</tr> 
+					<tr> 
+						<td><button type="submit" id="btn">Editar publicación</button></td>  
+					</tr> 
+				</table> 
+			</td>
+		</tr> 
+	</table>
+</div>
+
+<!--seccion para hacer una nueva publicacion-->
+<div class="newpub" id="newpub">
+	<h3>Nueva publicación</h3><br>
+	<form> <!--formulari para la nueva publicacion-->
+		<label>Ubicacion:</label>
+		<input type="text" id="ubic" name="ubic" required>
+		<label>Precio:</label>
+		<input type="text" id="prec" name="prec" required maxlength="50">
+		<label>Restricciones:</label>												
+		<input type="text" id="rest" name="rest" required>
+		<label>Descripción:</label>
+		<textarea id="desc" name="desc" required maxlength="50"></textarea><br>
+		<button type="submit" id="btnsb">Subir fotos</button><br>
+		<button type="submit" id="btn">Hacer nueva publicación</button>
+	</form>
+</div>
+
+</body>
+</html>
